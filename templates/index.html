@@ -1,0 +1,199 @@
+{% include 'head.html' %}
+<body>
+
+{% include 'navbar.html' %}
+
+
+<!-- First Container -->
+<div id="me" class="container-fluid bg-1 text-center">
+  <h1 class="my-4">Who Am I?</h1>
+  <img src="{{ url_for('static', filename='images/about/author.jpg') }}" class="img-responsive rounded-circle margin" style="display:inline" alt="Author" width="350" height="350">
+  <p class="display-6 p-5 w-75 mx-auto">Lorem ipsum dolor sit amet, <i><small>consectetur</small></i> <mark>adipisicing</mark> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="badge bg-primary">great!</span></p>
+  <p>It's not my picture. I'm more handsome and witty. 🤷 🙃</p>
+</div>
+
+<!-- Second Container -->
+<div id="more_me" class="container-fluid bg-3 text-center">
+  <div class="row p-5">
+    <div class="col-sm-6 p-3">
+      <h2>More about me</h2>
+        <div class="accordion accordion-flush" id="accordionFlush">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Trivia #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <code> some code </code> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Trivia #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+              <div class="accordion-body">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <code>nothing here</code> <span class="badge bg-secondary">great!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Trivia #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. <code> some code </code> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="col-sm-6 p-3">
+      <div class="mt-4 p-5 bg-light text-dark rounded shadow-sm">
+      <h3>Catchy line for CTA</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+      <button type="button" class="btn btn-danger">CTA</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Container -->
+<div id="" class="container-fluid bg-1 text-center">
+  <h2 class="my-4">What can <small>I</small> do for you?</h2>
+<!--  <p class="display-6 p-5">Lorem ipsum dolor sit amet</p>-->
+  <p class="w-50 p-3 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <button type="button" class="btn btn-danger">Another CTA</button>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="services" class="container-fluid bg-3 text-center">
+  <h2 class="my-4">What do I do exactly?</h2>
+  <div class="row p-5">
+    <div class="col-sm-4 p-3">
+      <h3 class="my-4">I do this</h3>
+      <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="{{ url_for('static', filename='images/icons/design.png') }}" class="img-responsive margin" style="height:50px" alt="Image">
+    </div>
+    <div class="col-sm-4 p-3">
+      <h3 class="my-4">I do that</h3>
+      <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="{{ url_for('static', filename='images/icons/plan.png') }}" class="img-responsive margin" style="height:50px" alt="Image">
+    </div>
+    <div class="col-sm-4 p-3">
+      <h3 class="my-4">And this too</h3>
+      <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="{{ url_for('static', filename='images/icons/print.png') }}" class="img-responsive margin" style="height:50px" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio" class="container-fluid text-center bg-1">
+  <h2 class="my-4">My books and events</h2>
+  <div id="events" class="row text-center my-5">
+    <h3 class="my-4 text-center">My TED talks</h3>
+    <ul class="list-group w-50 mx-auto">
+      <li class="list-group-item">
+        <p class="fw-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+          <mark>Thursday 10 September</mark>
+          <span class="badge bg-primary">Tokio</span>
+<!--          <span class="badge bg-danger">Sold Out!</span>-->
+          <a href="#" class="link-dark">Learn more</a>
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="fw-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+          <mark>Monday 16 October</mark>
+          <span class="badge bg-primary">New york</span>
+<!--          <span class="badge bg-danger">Sold Out!</span>-->
+          <a href="#" class="link-dark">Learn more</a>
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="fw-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+          <mark>Friday 27 November</mark>
+          <span class="badge bg-secondary">London</span>
+          <span class="badge bg-danger">Sold Out!</span>
+          <a href="#" class="link-dark">Learn more</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+    <div id="books" class="row text-center my-5 gy-5">
+      <h3 class="my-4">My books</h3>
+      <div class="col-sm-3">
+        <div class="card mx-auto" style="width: 20rem;">
+          <img src="{{ url_for('static', filename='images/portfolio/item-8.png') }}" class="card-img-top" alt="Portfolio">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Book title</h4>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-danger">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mx-auto" style="width: 20rem;">
+          <img src="{{ url_for('static', filename='images/portfolio/item-8.png') }}" class="card-img-top" alt="Portfolio">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Book title</h4>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-danger">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mx-auto" style="width: 20rem;">
+          <img src="{{ url_for('static', filename='images/portfolio/item-8.png') }}" class="card-img-top" alt="Portfolio">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Book title</h4>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-danger">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card mx-auto" style="width: 20rem;">
+          <img src="{{ url_for('static', filename='images/portfolio/item-8.png') }}" class="card-img-top" alt="Portfolio">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Book title</h4>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-danger">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% include 'footer.html' %}
